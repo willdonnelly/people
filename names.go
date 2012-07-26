@@ -4,6 +4,8 @@ import (
 	"math/rand"
 )
 
+// Produce a random name, selecting one of the 500 most popular first names and one of the
+// 500 most common last names.
 func Name() string {
 	first := FirstNames[rand.Int31n(int32(len(FirstNames)))]
 	last := LastNames[rand.Int31n(int32(len(LastNames)))]

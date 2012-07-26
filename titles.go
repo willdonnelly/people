@@ -5,6 +5,7 @@ import (
 	"math/rand"
 )
 
+// Select one of the 50 job titles offered at ExampleCorp
 func Title() string {
 	title := Titles[rand.Int31n(int32(len(Titles)))]
 	return fmt.Sprintf("%s, ExampleCorp", title)

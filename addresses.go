@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+// Generate a random address, of the form '123 Watermelon Ave\nExampleTown, KS'
 func Address() string {
 	number := rand.Int31n(10000)
 	street := strings.Title(Words[rand.Int31n(int32(len(Words)))])

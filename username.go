@@ -5,6 +5,7 @@ import (
 	"math/rand"
 )
 
+// Select a random word and append some numbers to it to make something username-looking.
 func Username() string {
 	word := Words[rand.Int31n(int32(len(Words)))]
 	digits := rand.Int31n(1000)
